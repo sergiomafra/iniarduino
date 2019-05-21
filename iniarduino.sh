@@ -18,13 +18,13 @@ if [ $WHOAMI == "root" ]; then
 else
 	UGROUPS=$(groups $WHOAMI | grep -Eo "(dialout|tty)")
 	if [[ $UGROUPS != *"dialout"* ]]; then
-		sudo usermod -aG dialout sergio
+		sudo usermod -aG dialout $WHOAMI
 		echo "$WHOAMI added to dialout group"
 	else
 		echo "$WHOAMI already on dialout group"
 	fi
 	if [[ $UGROUPS != *"tty"* ]]; then
-		sudo usermod -aG dialout sergio
+		sudo usermod -aG dialout $WHOAMI
 		echo "$WHOAMI added to tty group"
 	else
 		echo "$WHOAMI already on tty group"
