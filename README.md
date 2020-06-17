@@ -1,6 +1,7 @@
 # INIARDUINO
 
-Prepares your Ubuntu 18.04 to arduino by setting correct permissions and adding the current user to the necessary groups.
+Prepares your Ubuntu to arduino by setting the correct permissions and adding the current user to the necessary groups.
+Tested on Ubuntu 18.04 and 20.04
 
 ### Installation
 	$ chmod 0755 install.sh
