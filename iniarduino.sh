@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo echo
-
 ## CHECK IF ARDUINO IS CONNECTED TO PC
 TTYACM0=$(sudo find /dev -name ttyACM0)
 TTYUSB0=$(sudo find /dev -name ttyUSB0)
